@@ -1,0 +1,180 @@
+# Enhancing the website design with professional elements, subtle animations, and a clean layout
+
+html_professional_design = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The official website for the Selfmade Token ($SAME).">
+    <meta name="author" content="Selfmade Team">
+    <title>Selfmade Token | Official Site</title>
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000000, #1f1f1f);
+            color: white;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        header .logo h1 span.red {
+            color: #FF6347;
+        }
+        header .logo h1 span.black {
+            color: #FFD700;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+        #hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+            color: #FFD700;
+            text-shadow: 2px 2px 8px #000;
+        }
+        .cta-button {
+            background-color: #FF6347;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #FFD700;
+        }
+        #about, #roadmap, #live-prices, #community {
+            padding: 20px;
+            margin: 20px 10%;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+        #about:hover, #roadmap:hover, #live-prices:hover, #community:hover {
+            transform: translateY(-5px);
+        }
+        h3 {
+            border-left: 5px solid #FF6347;
+            padding-left: 10px;
+        }
+        .animated-gif {
+            max-width: 50px;
+            margin: 10px auto;
+            display: block;
+            animation: fade-in 2s infinite;
+        }
+        @keyframes fade-in {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            border-top: 3px solid #FF6347;
+        }
+        a {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span class="red">Selfmade</span> <span class="black">$SAME</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#live-prices">Live Prices</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>We are all the <span class="black">$SAME</span></h2>
+        <p><span class="red">Selfmade</span> is a symbol of success, independence, and the power to take your dreams into your own hands.</p>
+        <a href="#about" class="cta-button">Learn More</a>
+    </section>
+
+    <section id="about">
+        <h3>About Selfmade</h3>
+        <p>Selfmade ($SAME) is a community-driven token built as a symbol of empowerment and self-reliance.</p>
+        <p>Features include low transaction fees and fast processing times, making it a standout token.</p>
+        <img src="https://via.placeholder.com/50" class="animated-gif" alt="Glowing Coin">
+    </section>
+
+    <section id="roadmap">
+        <h3>Roadmap</h3>
+        <img src="uploaded-roadmap.png" alt="Roadmap" style="width:100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);">
+    </section>
+
+    <section id="live-prices">
+        <h3>Live Prices</h3>
+        <p>Real-time updates on Selfmade ($SAME) prices:</p>
+        <div id="price-widget">
+            <iframe src="https://dexscreener.com" width="100%" height="400" style="border: none;"></iframe>
+        </div>
+    </section>
+
+    <section id="community">
+        <h3>Join Our Community</h3>
+        <ul>
+            <li><a href="https://x.com/Selfmadeonsol" target="_blank">Twitter</a></li>
+            <li><a href="https://t.me/selfmadeonsol" target="_blank">Telegram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Selfmade Token. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+"""
+
+# Saving the professional and dynamic design HTML file
+with open("/mnt/data/selfmade_professional_design.html", "w") as file:
+    file.write(html_professional_design)
+
+# Outputting the professional design HTML file for download
+"/mnt/data/selfmade_professional_design.html"
